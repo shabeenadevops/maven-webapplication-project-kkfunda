@@ -98,7 +98,7 @@
 	    <repository>
 	      <id>nexus</id>
 	      <name>KK FUNDA Releases Nexus Repository</name>
-	      <url>http://98.92.133.193/repository/jio-release/</url>
+	      <url>http://98.81.146.219:8081/repository/jio-release/</url>
 	    </repository>
 	    
 	    <snapshotRepository>
