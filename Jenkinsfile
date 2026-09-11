@@ -2,6 +2,23 @@
 
 node
 {
+	node {
+
+    properties([
+        pipelineTriggers([
+            pollSCM('H/5 * * * *')
+        ])
+    ])
+
+    stage('Git Checkout') {
+        git 'https://github.com/shabeenadevops/maven-webapplication-project-kkfunda'
+    }
+
+    stage('Build') {
+        sh 'mvn clean package'
+    }
+
+}
 
    def mavenHome= tool name: "maven3.9.16"
    stage('git checkout')
