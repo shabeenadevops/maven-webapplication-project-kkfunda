@@ -127,8 +127,8 @@
             <!-- Maven Compiler Plugin -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-compiler-plugin</artifactId>
-                <version>3.3</version>
+                <artifactId>maven-war-plugin</artifactId>
+                <version>3.3.2</version>
                 <configuration>
                     <source>${jdk.version}</source>
                     <target>${jdk.version}</target>
@@ -148,20 +148,7 @@
                 </configuration>
             </plugin>
 
-            <!-- Maven Eclipse Plugin -->
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-eclipse-plugin</artifactId>
-                <version>2.9</version>
-                <configuration>
-                    <downloadSources>true</downloadSources>
-                    <downloadJavadocs>true</downloadJavadocs>
-                    <wtpversion>2.0</wtpversion>
-                    <wtpContextName>maven-web-application</wtpContextName>
-                </configuration>
-            </plugin>
-
-        </plugins>
+           
 
     </build>
 
